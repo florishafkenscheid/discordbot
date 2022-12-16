@@ -2,7 +2,12 @@ import hikari
 import lightbulb
 import random
 from datetime import datetime
-from BotToken import bot
+
+bot = lightbulb.BotApp(
+    token='ENTER TOKEN HERE',
+    intents=hikari.Intents.ALL_UNPRIVILEGED
+    | hikari.Intents.MESSAGE_CONTENT,
+)
 
 now = datetime.now()
 
